@@ -15,5 +15,8 @@ jobs:
       - name: Build the Fortran program
         run: make -C fortran
 
+      - name: Install Python dependencies
+        run: pip install -r python/cpmd-geometry-analysis/requirements.txt
+  
       - name: Check Python syntax
         run: python3 -m py_compile python/cpmd-geometry-analysis/src/*.py
