@@ -1,5 +1,5 @@
 *.o
 *.anc
-*.mod/
+*.mod
 fortran/AnalyzerExcitonTransfer
 
