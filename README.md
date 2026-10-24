@@ -44,7 +44,6 @@ It expects CPMD-style files in the working directory (`TRAJEC.xyz`, `TRAJ_mol.xy
 Requirements: `gfortran` and GNU `make`.
 
 ```bash
-
 cd fortran
 make            # builds fortran/AnalyzerExcitonTransfer
 make clean
