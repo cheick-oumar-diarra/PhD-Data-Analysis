@@ -39,7 +39,7 @@ SOURCES:=AnalyzerExcitonTransfer.f90 \
      InitGeoForLen.f90 \
      lenghtenMonomer.f90 \
      initGeoForStacking.f90 \
-     translateGeoForStackV2.f90 \
+     translateGeoForStack.f90 \
      stackMonomer.f90 \
      mod_analyzeTraj.f90 \
      fillSetB.f90 \
