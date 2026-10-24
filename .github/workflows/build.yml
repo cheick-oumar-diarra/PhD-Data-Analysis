@@ -1,0 +1,19 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Install the Fortran compiler
+        run: sudo apt-get update && sudo apt-get install -y gfortran
+
+      - name: Build the Fortran program
+        run: make -C fortran
+
+      - name: Check Python syntax
+        run: python3 -m py_compile python/cpmd-geometry-analysis/src/*.py
