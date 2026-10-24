@@ -74,7 +74,7 @@ AnalyzerExcitonTransfer.anc : countNumberOfLine.anc \
 parseIonsAndWC.anc : countNumberOfLine.anc fileGenerator.anc
 lenghtenMonomer.anc :InitGeoForLen.anc sortGeoFile.anc parseTrajOrGeoxyz.anc \
 	fileGenerator.anc indexage.anc
-stackMonomer.anc : initGeoForStacking.anc translateGeoForStackV2.anc \
+stackMonomer.anc : initGeoForStacking.anc translateGeoForStack.anc \
 	parseTrajOrGeoxyz.anc sortGeoFile.anc fileGenerator.anc indexage.anc
 analyzeGeoTraj1.anc : indexage.anc mod_analyzeTraj.anc fillSetB.anc
 excitonDiff.anc : mod_excitonDiffusion.anc fileGenerator.anc
